@@ -5,7 +5,6 @@ apt
 
 This apt module is an opinionated refactoring of [puppetlabs-apt](https://github.com/virb/puppetlabs-apt) which
 respects the graph and runs in a predetermined order. Everytime.
-===
 
 ## Overview
 This module provides an interface for managing apt sources and keys with Puppet. It always runs in the same order:
