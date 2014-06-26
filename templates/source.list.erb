@@ -1,5 +1,5 @@
 # <%= @name %>
-deb <% if @architecture %>[arch=<%= @architecture %>] <% end %><%= @location %> <%= @release %> <%= @repos %>
+deb <% if @architecture %>[arch=<%= @architecture %>] <% end %><%= @location %> <%= @release %> <%= @repos.join(' ') %>
 <%- if @include_src then -%>
-deb-src <% if @architecture %>[arch=<%= @architecture %>] <% end %><%= @location %> <%= @release %> <%= @repos %>
+deb-src <% if @architecture %>[arch=<%= @architecture %>] <% end %><%= @location %> <%= @release %> <%= @repos.join(' ') %>
 <%- end -%>
